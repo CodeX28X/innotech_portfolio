@@ -1,0 +1,46 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll(".service-card");
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+        observer.unobserve(entry.target); // animate once
+      }
+    });
+  }, { threshold: 0.2 }); // triggers when 20% is visible
+
+  cards.forEach(card => observer.observe(card));
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll(".portfolio-card");
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+        observer.unobserve(entry.target); // animate once
+      }
+    });
+  }, { threshold: 0.2 }); // triggers when 20% is visible
+
+  cards.forEach(card => observer.observe(card));
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const contactForm = document.querySelector(".contact");
+  if (contactForm) {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+          observer.unobserve(entry.target); // animate once
+        }
+      });
+    }, { threshold: 0.2 });
+    observer.observe(contactForm);
+  }
+});
+
+
