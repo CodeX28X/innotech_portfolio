@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href = "css/style.css" rel = "stylesheet">
+    
+    <title>Document</title>
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+
+        <a class="navbar-brand" href="#">Innotech Portfolio</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero d-flex align-items-center text-center text-white">
+    <div class="container">
+        <h1 class="display-3 fw-bold">Welcome to Innotech Portfolio</h1>
+        <p class="lead mt-3">Showcasing innovative designs, modern web solutions, and creative projects.</p>
+        <a href="#services" class="btn btn-primary btn-lg mt-4">Get Started</a>
+    </div>
+    </section>
+
+  <!-- Divider -->
+    <div class="divider bg-dark"></div>
+
+  <!--Services-->  
+  <section id = "services" class="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <p>We provide innovative solutions to help your business grow and succeed</p>
+      <div class="services-grid">
+
+        <!-- Service 1 -->
+        <div class="service-card service-1">
+          <div class="service-content">
+            <h3>Web Development</h3>
+            <p>We create modern, responsive, and high-performing websites tailored to your business goals using the latest technologies.</p>
+            <a href="services.html#service-1" class="service-btn">Learn More</a>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card service-2">
+          <div class="service-content">
+            <h3>Mobile Apps</h3>
+            <p>We develop powerful and user-friendly mobile applications for iOS and Android, optimized for performance and scalability.</p>
+            <a href="services.html#service-2" class="service-btn">Learn More</a>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card service-3">
+          <div class="service-content">
+            <h3>UI/UX Design</h3>
+            <p>We design visually stunning, user-friendly interfaces that enhance customer experience and boost engagement.</p>
+            <a href="services.html#service-2" class="service-btn">Learn More</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section>
+    <div class="portfolio py-5">
+      <div class="container">
+        <h2>Our Portfolio</h2>
+        <p>Explore some of our recent projects and designs.</p>
+      </div>
+      <div class = "portfolio-grid">
+        
+        <!-- Portfolio Item 1 -->
+        <a href="portfolio.html#project1" class="text-decoration-none">
+          <div class="portfolio">
+            <div class="portfolio-card h-100 shadow-sm border-0">
+              <img src="img/portfolio1.jpg" class="card-img-top" alt="Portfolio 1">
+              <div class="portfoliocard-body text-center">
+                <h3 class="portfolio card-text">E-commerce Website</h3>
+                <p class="portfolio">A modern online store with seamless user experience and secure payment integration.</p>
+            
+              </div>
+            </div>
+          </div>
+        </a>
+        
+
+        <!-- Portfolio Item 2 -->
+        <a href="portfolio.html#project2" class="text-decoration-none">
+          <div class="portfolio">
+            <div class="portfolio-card h-100 shadow-sm border-0">
+              <img src="img/portfolio2.jpg" class="card-img-top" alt="Portfolio 2">
+              <div class="portfolio text-center">
+                <h3 class="portfolio">Mobile App UI Design</h3>
+                <p class="portfolio">A sleek and intuitive mobile app interface designed for optimal user engagement.</p>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Portfolio Item 3 -->
+        <a href="portfolio.html#project3" class="text-decoration-none">
+        <div class="portfolio">
+          <div class="portfolio-card h-100 shadow-sm border-0">
+            <img src="img/portfolio3.jpg" class="card-img-top" alt="Portfolio 3">
+            <div class="portfolio text-center">
+              <h3 class="portfolio">Branding & Graphics</h3>
+              <p class="portfolio">Creative branding solutions including logo design, marketing materials, and visual identity.</p>
+            </div>
+          </div>
+        </div>
+        </a>
+
+        <!-- Portfolio Item 4 -->
+        <a href="portfolio.html#project4" class="text-decoration-none">
+        <div class="portfolio">
+          <div class="portfolio-card h-100 shadow-sm border-0">
+            <img src="img/portfolio4.jpg" class="card-img-top" alt="Portfolio 4">
+            <div class="portfolio text-center">
+              <h3 class="portfolio">SEO Marketing Campaign</h3>
+              <p class="portfolio">A comprehensive SEO strategy that improved search rankings and increased organic traffic.</p>
+            </div>
+          </div>
+        </div>
+        </a>
+        
+      </div>  
+    </div>
+  </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact" >
+      <div class="container">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <form class="needs-validation mx-auto" novalidate style="max-width: 500px;">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+            <div class="invalid-feedback">Please enter your name.</div>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email" required pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$">
+            <div class="invalid-feedback">Please enter a valid email address.</div>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+            <div class="invalid-feedback">Please enter your message.</div>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Send Message</button>
+        </form>
+      </div>
+      <script>
+        // Bootstrap validation
+        (() => {
+          'use strict';
+          const forms = document.querySelectorAll('.needs-validation');
+          Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        })();
+      </script>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-4 mt-5">
+      <div class="container text-center">
+        <div class="mb-2">
+          <a href="#" class="text-white mx-2"><i class="bi bi-facebook"></i> Facebook</a>
+          <a href="#" class="text-white mx-2"><i class="bi bi-twitter"></i> Twitter</a>
+          <a href="#" class="text-white mx-2"><i class="bi bi-linkedin"></i> LinkedIn</a>
+        </div>
+        <div>
+          &copy; 2025 Innotech Portfolio. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="js/script"></script>
+
+</body>
+</html>
